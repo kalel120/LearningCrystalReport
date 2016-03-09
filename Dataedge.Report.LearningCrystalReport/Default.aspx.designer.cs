@@ -7,6 +7,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using System.Web.UI.WebControls;
+using CrystalDecisions.Web;
+
 namespace Dataedge.Report.LearningCrystalReport {
     
     
@@ -19,7 +22,7 @@ namespace Dataedge.Report.LearningCrystalReport {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::CrystalDecisions.Web.CrystalReportViewer CrystalReportViewer1;
+        protected CrystalReportViewer CrystalReportViewer1;
         
         /// <summary>
         /// btnGenerateReport control.
@@ -28,6 +31,6 @@ namespace Dataedge.Report.LearningCrystalReport {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnGenerateReport;
+        protected Button btnGenerateReport;
     }
 }

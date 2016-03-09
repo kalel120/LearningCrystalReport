@@ -7,6 +7,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using System.Web.UI.WebControls;
+
 namespace Dataedge.Report.LearningCrystalReport {
     
     
@@ -19,7 +21,7 @@ namespace Dataedge.Report.LearningCrystalReport {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder HeadContent;
+        protected ContentPlaceHolder HeadContent;
         
         /// <summary>
         /// HeadLoginView control.
@@ -28,7 +30,7 @@ namespace Dataedge.Report.LearningCrystalReport {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LoginView HeadLoginView;
+        protected LoginView HeadLoginView;
         
         /// <summary>
         /// NavigationMenu control.
@@ -37,7 +39,7 @@ namespace Dataedge.Report.LearningCrystalReport {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Menu NavigationMenu;
+        protected Menu NavigationMenu;
         
         /// <summary>
         /// MainContent control.
@@ -46,6 +48,6 @@ namespace Dataedge.Report.LearningCrystalReport {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+        protected ContentPlaceHolder MainContent;
     }
 }
