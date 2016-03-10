@@ -8,9 +8,5 @@
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
     <h2>
         &nbsp;<CR:CrystalReportViewer ID="CrystalReportViewer1" runat="server" 
-        AutoDataBind="True" />
-    <h2>
-    <br />
-<asp:Button ID="btnGenerateReport" runat="server" 
-    onclick="btnGenerateReport_Click" Text="Generate Report" />
-</asp:Content>
+        AutoDataBind="True" ToolPanelWidth="200px" Width="350px" />
+    </asp:Content>
