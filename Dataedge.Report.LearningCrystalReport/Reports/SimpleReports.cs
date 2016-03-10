@@ -119,6 +119,14 @@ namespace Dataedge.Report.LearningCrystalReport.Reports {
                 return this.ReportDefinition.Sections[8];
             }
         }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_Number_of_Items {
+            get {
+                return this.DataDefinition.ParameterFields[0];
+            }
+        }
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]

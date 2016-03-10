@@ -13,6 +13,15 @@ namespace Dataedge.Report.LearningCrystalReport {
     public partial class Default {
         
         /// <summary>
+        /// btntakeInput control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btntakeInput;
+        
+        /// <summary>
         /// CrystalReportViewer1 control.
         /// </summary>
         /// <remarks>
@@ -20,5 +29,23 @@ namespace Dataedge.Report.LearningCrystalReport {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::CrystalDecisions.Web.CrystalReportViewer CrystalReportViewer1;
+        
+        /// <summary>
+        /// lblShowValue control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblShowValue;
+        
+        /// <summary>
+        /// ddlSelectValue control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlSelectValue;
     }
 }
