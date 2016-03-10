@@ -16,14 +16,14 @@ namespace Dataedge.Report.LearningCrystalReport.Reports {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class SimpleReports : ReportClass {
+    public class subReport : ReportClass {
         
-        public SimpleReports() {
+        public subReport() {
         }
         
         public override string ResourceName {
             get {
-                return "SimpleReports.rpt";
+                return "subReport.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace Dataedge.Report.LearningCrystalReport.Reports {
         
         public override string FullResourceName {
             get {
-                return "Dataedge.Report.LearningCrystalReport.Reports.SimpleReports.rpt";
+                return "Dataedge.Report.LearningCrystalReport.Reports.subReport.rpt";
             }
             set {
                 // Do nothing
@@ -74,7 +74,7 @@ namespace Dataedge.Report.LearningCrystalReport.Reports {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section GroupHeaderSection2 {
+        public CrystalDecisions.CrystalReports.Engine.Section Section3 {
             get {
                 return this.ReportDefinition.Sections[3];
             }
@@ -82,7 +82,7 @@ namespace Dataedge.Report.LearningCrystalReport.Reports {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section Section3 {
+        public CrystalDecisions.CrystalReports.Engine.Section GroupFooterSection1 {
             get {
                 return this.ReportDefinition.Sections[4];
             }
@@ -90,7 +90,7 @@ namespace Dataedge.Report.LearningCrystalReport.Reports {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section GroupFooterSection2 {
+        public CrystalDecisions.CrystalReports.Engine.Section Section4 {
             get {
                 return this.ReportDefinition.Sections[5];
             }
@@ -98,33 +98,17 @@ namespace Dataedge.Report.LearningCrystalReport.Reports {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section GroupFooterSection1 {
-            get {
-                return this.ReportDefinition.Sections[6];
-            }
-        }
-        
-        [Browsable(false)]
-        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section Section4 {
-            get {
-                return this.ReportDefinition.Sections[7];
-            }
-        }
-        
-        [Browsable(false)]
-        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
         public CrystalDecisions.CrystalReports.Engine.Section Section5 {
             get {
-                return this.ReportDefinition.Sections[8];
+                return this.ReportDefinition.Sections[6];
             }
         }
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedSimpleReports : Component, ICachedReport {
+    public class CachedsubReport : Component, ICachedReport {
         
-        public CachedSimpleReports() {
+        public CachedsubReport() {
         }
         
         [Browsable(false)]
@@ -161,7 +145,7 @@ namespace Dataedge.Report.LearningCrystalReport.Reports {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            SimpleReports rpt = new SimpleReports();
+            subReport rpt = new subReport();
             rpt.Site = this.Site;
             return rpt;
         }
