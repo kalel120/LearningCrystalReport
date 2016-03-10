@@ -10,26 +10,15 @@ namespace Dataedge.Report.LearningCrystalReport.DataAcess {
             SqlConnection connection = new SqlConnection(connectionString);
             SqlCommand objCommand = new SqlCommand();
 
-            DataSet objDataSet;
-            try {
-                connection.Open();
-                objCommand.CommandText = "spGetAllOrders";
-                objCommand.CommandType = CommandType.StoredProcedure;
-                objCommand.Connection = connection;
+            connection.Open();
+            objCommand.CommandText = "spGetAllOrders";
+            objCommand.CommandType = CommandType.StoredProcedure;
+            objCommand.Connection = connection;
 
-                objDataSet = new DataSet();
-                var objDataAdapter = new SqlDataAdapter(objCommand);
-                objDataAdapter.Fill(objDataSet, "Users");
-            }
-            catch (Exception ex) {
-                throw new Exception(ex.Message);
-            }
-            finally {
-                objCommand.Dispose();
-                if (connection.State != ConnectionState.Closed) {
-                    connection.Close();
-                }
-            }
+            var objDataSet = new DataSet();
+            var objDataAdapter = new SqlDataAdapter(objCommand);
+            objDataAdapter.Fill(objDataSet, "Users");
+            connection.Close();
             return objDataSet.Tables[0];
         }
     }

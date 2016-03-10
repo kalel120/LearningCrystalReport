@@ -1,0 +1,5 @@
+D:\VSProjects\Dataedge.Report.LearningCrystalReport\Dataedge.Report.LearningCrystalReport\bin\Dataedge.Report.LearningCrystalReport.dll
+D:\VSProjects\Dataedge.Report.LearningCrystalReport\Dataedge.Report.LearningCrystalReport\bin\Dataedge.Report.LearningCrystalReport.pdb
+D:\VSProjects\Dataedge.Report.LearningCrystalReport\Dataedge.Report.LearningCrystalReport\obj\Debug\ResolveAssemblyReference.cache
+D:\VSProjects\Dataedge.Report.LearningCrystalReport\Dataedge.Report.LearningCrystalReport\obj\Debug\Dataedge.Report.LearningCrystalReport.dll
+D:\VSProjects\Dataedge.Report.LearningCrystalReport\Dataedge.Report.LearningCrystalReport\obj\Debug\Dataedge.Report.LearningCrystalReport.pdb

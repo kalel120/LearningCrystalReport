@@ -17,10 +17,10 @@ using CrystalDecisions.Shared;
 
 namespace Dataedge.Report.LearningCrystalReport.Reports {
     public class SimpleReports : ReportClass {
-        
+
         public SimpleReports() {
         }
-        
+
         public override string ResourceName {
             get {
                 return "SimpleReports.rpt";
@@ -29,7 +29,7 @@ namespace Dataedge.Report.LearningCrystalReport.Reports {
                 // Do nothing
             }
         }
-        
+
         public override bool NewGenerator {
             get {
                 return true;
@@ -38,7 +38,7 @@ namespace Dataedge.Report.LearningCrystalReport.Reports {
                 // Do nothing
             }
         }
-        
+
         public override string FullResourceName {
             get {
                 return "Dataedge.Report.LearningCrystalReport.Reports.SimpleReports.rpt";
@@ -47,7 +47,7 @@ namespace Dataedge.Report.LearningCrystalReport.Reports {
                 // Do nothing
             }
         }
-        
+
         [Browsable(false)]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public Section Section1 {
@@ -55,7 +55,7 @@ namespace Dataedge.Report.LearningCrystalReport.Reports {
                 return this.ReportDefinition.Sections[0];
             }
         }
-        
+
         [Browsable(false)]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public Section Section2 {
@@ -63,7 +63,7 @@ namespace Dataedge.Report.LearningCrystalReport.Reports {
                 return this.ReportDefinition.Sections[1];
             }
         }
-        
+
         [Browsable(false)]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public Section Section3 {
@@ -71,7 +71,7 @@ namespace Dataedge.Report.LearningCrystalReport.Reports {
                 return this.ReportDefinition.Sections[2];
             }
         }
-        
+
         [Browsable(false)]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public Section Section4 {
@@ -79,7 +79,7 @@ namespace Dataedge.Report.LearningCrystalReport.Reports {
                 return this.ReportDefinition.Sections[3];
             }
         }
-        
+
         [Browsable(false)]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public Section Section5 {
@@ -88,13 +88,13 @@ namespace Dataedge.Report.LearningCrystalReport.Reports {
             }
         }
     }
-    
+
     [ToolboxBitmap(typeof(ExportOptions), "report.bmp")]
     public class CachedSimpleReports : Component, ICachedReport {
-        
+
         public CachedSimpleReports() {
         }
-        
+
         [Browsable(false)]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public virtual bool IsCacheable {
@@ -105,7 +105,7 @@ namespace Dataedge.Report.LearningCrystalReport.Reports {
                 // 
             }
         }
-        
+
         [Browsable(false)]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public virtual bool ShareDBLogonInfo {
@@ -116,7 +116,7 @@ namespace Dataedge.Report.LearningCrystalReport.Reports {
                 // 
             }
         }
-        
+
         [Browsable(false)]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public virtual TimeSpan CacheTimeOut {
@@ -127,13 +127,13 @@ namespace Dataedge.Report.LearningCrystalReport.Reports {
                 // 
             }
         }
-        
+
         public virtual ReportDocument CreateReport() {
             SimpleReports rpt = new SimpleReports();
             rpt.Site = this.Site;
             return rpt;
         }
-        
+
         public virtual string GetCustomizedCacheKey(RequestContext request) {
             String key = null;
             // // The following is the code used to generate the default

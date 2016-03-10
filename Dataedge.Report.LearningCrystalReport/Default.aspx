@@ -7,7 +7,8 @@
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
     <h2>
-        &nbsp;<CR:CrystalReportViewer ID="CrystalReportViewer1" runat="server" AutoDataBind="true" />
+        &nbsp;<CR:CrystalReportViewer ID="CrystalReportViewer1" runat="server" 
+        AutoDataBind="True" />
     <h2>
     <br />
 <asp:Button ID="btnGenerateReport" runat="server" 
